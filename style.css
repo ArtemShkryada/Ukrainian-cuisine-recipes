@@ -2,7 +2,33 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url(bg.jpg);
+    
   }
+.body{
+  background: url(bg1.jpg) no-repeat ;
+  background-size: cover;;
+  text-align: center;
+  padding: 20px;
+}
+.body:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 2;
+}
+
+.inner {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  padding: 50px;  
+}
 
   header {
     background-color: #edad44;
@@ -10,20 +36,24 @@ body {
     text-align: center;
   }
 main{
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
 }
   h1 {
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 0;
   }
-
-  h2 {
-    font-size: 36px;
-    margin-top: 150px;
+  .h1 {
+    font-size: 40px;
+    margin-bottom: 0;
   }
+  h2 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  
 h3{
     font-size: 24px;
-    margin-top: 50px;
 }
   p {
     font-size: 18px;
@@ -37,17 +67,34 @@ h3{
     padding: 0;
   }
 .menu{
-    margin-top: 50px;
+    margin-top: 250px;
     display: flex;
     gap: 100px;
     justify-content: center;
+  }
+.menu1{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  border: solid 1px;
+  background: #333;
+  width: 450px;
+  height: 30px;
 }
   li {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 10px;
   }
-
+.li1{
+  font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
   .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -115,11 +162,11 @@ h3{
 
   .hover-underline-animation {
     position: relative;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
   }
   .hover-underline-animation:hover{
-        color: #000;
+        color: #ffffff;
         transition: transform 0.4s ease-out;
   }
   .hover-underline-animation::after {
@@ -130,7 +177,7 @@ h3{
     height: 2px;
     bottom: 0;
     left: 0;
-    background:  radial-gradient(circle, rgb(83, 44, 76) 22%, rgb(35, 82, 115) 89%);
+    background:  radial-gradient(circle, rgb(207, 143, 195) 22%, rgb(100, 178, 233) 89%);
     transform-origin: bottom;
     transition: transform 0.17s ease;
   }
@@ -138,4 +185,9 @@ h3{
   .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom ;
+  }
+  .ul{
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
   }
