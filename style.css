@@ -191,3 +191,6 @@ h3{
     flex-direction: row;
     gap: 170px;
   }
+  .img{
+    border-radius: 20px;
+  }
